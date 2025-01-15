@@ -1,4 +1,5 @@
 return {
+    DeleteAppointmets = false, -- If true it will delete the COMPLETED appointments from the database on resource stop
     Targets = {
         [1] = {
             Location = vec3(-539.49, -204.44, 37.65), -- Location of the target
@@ -8,14 +9,6 @@ return {
                 Mayor:OpenAppointmentCounter() -- Function to be called when the target is interacted with
             end
         },
-
-        [2] = {
-            Location = vec3(-546.96, -206.56, 38.22),
-            Name = 'Appointment_Making',
-            OnSelect = function()
-                Mayor:CreateAppointmentCounter()
-            end
-        }
     },
 
     Mayor_Job = {

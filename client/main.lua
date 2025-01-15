@@ -65,6 +65,16 @@ local function createCityHallPed()
                             },
 
                             {
+                                id = 'appointment',
+                                label = 'Make an Appointment',
+                                icon = 'calendar-alt',
+                                close = true,
+                                action = function()
+                                    Mayor:CreateAppointmentCounter()
+                                end
+                            },
+
+                            {
                                 id = 'close',
                                 label = 'Close',
                                 icon = 'times',
